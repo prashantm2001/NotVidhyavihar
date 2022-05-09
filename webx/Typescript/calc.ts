@@ -2,30 +2,30 @@ var res:number;
 var y:number;
 var x:number;
 
-const addition = () => {
-    x = document.getElementById('n1').value;
-    y =  document.getElementById('n2').value;
+var addition = () => {
+    x = +(<HTMLInputElement>document.getElementById('n1')).value;
+    y =  +(<HTMLInputElement> document.getElementById('n2')).value;
     res=(x+y);
     document.getElementById('answer').innerHTML = "<span>the addition of "+x+" and "+y+" is<span> "+res+"</span></span>";
 }
 
-const subtraction = () => {
-    x = document.getElementById('n1').value;
-    y =  document.getElementById('n2').value;
+var subtraction = () => {
+    x = +(<HTMLInputElement>document.getElementById('n1')).value;
+    y =  +(<HTMLInputElement>document.getElementById('n2')).value;
     res=(x-y);
     document.getElementById('answer').innerHTML = "<span>the subtraction of "+x+" and "+y+" is<span> "+res+"</span></span>";
 }
 
-const mult = () => {
-    x = document.getElementById('n1').value;
-    y =  document.getElementById('n2').value;
+var mult = () => {
+    x = +(<HTMLInputElement>document.getElementById('n1')).value;
+    y =  +(<HTMLInputElement>document.getElementById('n2')).value;
     res=(x*y);
     document.getElementById('answer').innerHTML = "<span>the multiplication of "+x+" and "+y+" is<span> "+res+"</span></span>";
 }
 
-const div = () => {
-    x = document.getElementById('n1').value;
-    y =  document.getElementById('n2').value;
+var div = () => {
+    x = +(<HTMLInputElement>document.getElementById('n1')).value;
+    y =  +(<HTMLInputElement>document.getElementById('n2')).value;
     res=(x/y);
     document.getElementById('answer').innerHTML = "<span>the division of "+x+" and "+y+" is<span> "+res+"</span></span>";
 }
