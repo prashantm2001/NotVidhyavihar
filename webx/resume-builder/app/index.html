@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV maker</title>
+
+    <!-- Google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+     <script src="../dist/index.js" defer></script>
+      <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+      <script src = "https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+   </head>
+   
+   <body>
+      <section class = "section">
+      
+         <div class = "container">
+         <span class = "title">
+            Form Fields
+         </span>
+         <br>
+         <br>
+         <div class = "field">
+            <label class = "label">Name</label>
+            <div class = "control">
+               <input class = "input" id="inputname" type = "text" placeholder = "enter your name...">
+            </div>
+         </div>
+         <div class = "field">
+            <label class = "label">title</label>
+            <div class = "control">
+               <input class = "input" id="inputtitle" type = "text" placeholder = "enter your title...">
+            </div>
+         </div>
+         <div class = "field">
+            <label class = "label">About you</label>
+            <div class = "control">
+            <textarea class = "textarea"id="inputabout" type = "text" placeholder = "enter few lines about you..."></textarea>
+            </div>
+         </div>
+         <br>
+         
+         <br>
+         <br>
+         
+         <div class = "field">
+         <span class = "is-size-5">
+            Skills
+         </span>
+            <div class = "control">
+               <input class = "input" id="inputskills" type = "text" placeholder = "enter your name...">
+            </div>
+         </div>
+         <br>
+        
+         <br>
+         <span class = "is-size-5">
+            Contact
+         </span>
+         
+         <div class = "field">
+            <label class = "label">Number</label>
+            <div class = "control">
+               <input class = "input" id="contactnumber" type = "number" >
+            </div>
+         </div>
+         <div class = "field">
+            <label class = "label">email</label>
+            <div class = "control">
+               <input class = "input" id="contactemail" type = "text">
+            </div>
+         </div>
+         <div class = "field">
+            <label class = "label">address</label>
+            <div class = "control">
+               <input class = "input" id="contactaddress" type = "text">
+            </div>
+         </div>
+         
+         <div class = "field">
+            <label class = "label">github</label>
+            <div class = "control">
+               <input class = "input" id="contactgithub" type = "text">
+            </div>
+         </div>
+         
+         <br>
+         <div class = "field is-grouped">
+            <div class = "control">
+               <!-- <a href="resume.html"> -->
+                    <button class = "button is-link" id="clickme">Submit</button>
+               <!-- </a> -->
+            </div>
+         </div>
+         </div>
+         <div>
+<main class="resume-contents">
+        <section class="left-section">
+            <div class="left-section-contents">
+                <div class="profile">
+                    <p class="name"id="disname">Lorem Ipsum</p>
+                    <p class="profession"id="distitle">Software Engineer</p>
+                </div>
+                <div class="contact-info">
+                    <p class="left-title">Contact Info</p>
+                    <ul>
+                        <li id="disnumber"><i class="fa fa-phone"></i>+123456789
+                        </li>
+                        <li id="disemail"><i class="fa fa-envelope"></i>loremipsum@amail.com
+                        </li>
+                        <li id="disgithub"><i class="fa fa-github"></i>loremipsum.github.com
+                        </li>
+                        <li id="disaddress"><i class="fa fa-map-marker"></i>70 Dream St, USA
+                        </li>
+                    </ul>
+                </div>
+                <div class="skills">
+                    <p class="left-title">Skills</p>
+                    <ul>
+                        <li><p id="disskills">Python3, Django & Flask, C & C++, Java, JavaScript, Angular, HTML5 & CSS3, SQL, MySql</p></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="right-section">
+            <div class="right-section-contents">
+                <section class="about gap">
+                    <div class="right-title">About Me</div>
+                    <p class="about-me-contents"id="disdescription">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quae aliquid ab tempore deleniti modi animi facere, 
+                        laborum illum quis in quidem distinctio quod officia unde. Aspernatur eligendi architecto ipsam sint alias consequatur 
+                        at modi magni in, accusantium iure voluptates eius possimus? Incidunt veritatis illum corrupti nobis labore expedita.<br>
+                        <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus temporibus velit minima assumenda atque inventore natus hic, 
+                        voluptatem est explicabo voluptate vel, adipisci illum, ratione repellendus! Consequuntur veniam modi nihil.
+                    </p>
+                </section>
+
+                <section class="experience gap">
+                    <div class="right-title">Experience</div>
+                    <div class="experience-contents">
+                        <div class="exp-left">
+                            <p class="exp-company-name">Company one</p>
+                        </div>
+                        <div class="exp-right">
+                            <p class="exp-position">position one</p>
+                            <p class="exp-desc">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, quo. Non provident odio nam quas praesentium! 
+                                Fugit laborum accusantium repellat?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="experience-contents">
+                        <div class="exp-left">
+                            <p class="exp-company-name">Company two</p>
+                        </div>
+                        <div class="exp-right">
+                            <p class="exp-position">position two</p>
+                            <p class="exp-desc">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, quo. Non provident odio nam quas praesentium! 
+                                Fugit laborum accusantium repellat?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="experience-contents">
+                        <div class="exp-left">
+                            <p class="exp-company-name">Company three</p>
+                        </div>
+                        <div class="exp-right">
+                            <p class="exp-position">position three</p>
+                            <p class="exp-desc">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, quo. Non provident odio nam quas praesentium! 
+                                Fugit laborum accusantium repellat?
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="education gap">
+                    <div class="right-title">Education</div>
+                    <div class="education-contents">
+                        <div class="education-left">
+                            <p class="education-school-name">University name</p>
+                        </div>
+                        <div class="education-right">
+                            <p class="education-subject">Computer Science</p>
+                            <p class="education-desc">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, quo. Non provident odio nam quas praesentium! 
+                                Fugit laborum accusantium repellat?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="education-contents">
+                        <div class="education-left">
+                            <p class="education-school-name">College name</p>
+                        </div>
+                        <div class="education-right">
+                            <p class="education-subject">Science</p>
+                            <p class="education-desc">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, quo. Non provident odio nam quas praesentium! 
+                                Fugit laborum accusantium repellat?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="education-contents">
+                        <div class="education-left">
+                            <p class="education-school-name">School name</p>
+                        </div>
+                        <div class="education-right">
+                            <p class="education-subject">Science</p>
+                            <p class="education-desc">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, quo. Non provident odio nam quas praesentium! 
+                                Fugit laborum accusantium repellat?
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </section>
+    </main>
+         </div>
+      </section>
+    </body>
