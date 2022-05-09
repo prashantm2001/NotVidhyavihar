@@ -42,7 +42,9 @@ console.log(formData);
       } else {
         console.log(data.message);
         $("form").html(
-          '<div class="alert alert-success">' + data.message + "</div>"
+          '<div class="alert alert-success">' + data.message.name + " " +
+          data.message.email + " "+ data.message.superheroAlias 
+          + "</div>"
         );
       }
 
