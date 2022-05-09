@@ -37,11 +37,32 @@ const getdata = () => {
   const email = document.getElementById('contactemail') as HTMLInputElement;
   const address = document.getElementById('contactaddress') as HTMLInputElement;
   const github = document.getElementById('contactgithub') as HTMLInputElement;
+
+  const excompany = document.getElementsByClassName('company') as HTMLCollectionOf<HTMLInputElement>;
+  const exposition = document.getElementsByClassName('position') as HTMLCollectionOf<HTMLInputElement>;
+  const exdescription = document.getElementsByClassName('exdescription') as HTMLCollectionOf<HTMLInputElement>;
+
+  const edschool = document.getElementsByClassName('school') as HTMLCollectionOf<HTMLInputElement>;
+  const eddegree = document.getElementsByClassName('degree') as HTMLCollectionOf<HTMLInputElement>;
+  const eddescription = document.getElementsByClassName('eddescription') as HTMLCollectionOf<HTMLInputElement>;
+
+  const temp : education[] = [{
+    school: edschool[0].value,
+    degree: eddegree[0].value,
+    description: eddescription[0].value
+  }];
+  const temp2 : experience[] = [{
+    company: excompany[0].value,
+    position: exposition[0].value,
+    description: exdescription[0].value
+  }];
   const data: resume = {
     name: name.value,
     title: title.value,
     description: description.value,
     skills: skills.value,
+    education: temp,
+    experience: temp2,
     contact: {
       number: number.value,
       email: email.value,
@@ -68,6 +89,20 @@ const setdata = (data: resume) => {
   emaildis.innerHTML = data.contact.email;
   const skillsdis: HTMLElement = document.getElementById('disskills') as HTMLElement;
   skillsdis.innerHTML = data.skills;
+
+  const discompany: HTMLElement = document.getElementById('discompany') as HTMLElement;
+  discompany.innerHTML = data.experience[0].company;
+  const disposition: HTMLElement = document.getElementById('disposition') as HTMLElement;
+  disposition.innerHTML = data.experience[0].position;
+  const disexdescription: HTMLElement = document.getElementById('disexdesc') as HTMLElement;
+  disexdescription.innerHTML = data.experience[0].description;
+
+  const disschool: HTMLElement = document.getElementById('disschool') as HTMLElement;
+  disschool.innerHTML = data.education[0].school;
+  const disdegree: HTMLElement = document.getElementById('disdegree') as HTMLElement;
+  disdegree.innerHTML = data.education[0].degree;
+  const diseddescription: HTMLElement = document.getElementById('diseddesc') as HTMLElement;
+  diseddescription.innerHTML = data.education[0].description;
 }
 
 const click = () => {
