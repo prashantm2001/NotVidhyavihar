@@ -54,7 +54,7 @@ def read_root(person : Person):
       data["errors"] = errors
     else:
       data["success"] = True
-      data["message"] = "Nicely done!"
+      data["message"] = person
       
       
     return data
